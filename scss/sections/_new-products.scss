@@ -1,0 +1,113 @@
+.new-products {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  
+    .product-grid-box {
+      position: relative;
+      max-width: 100%;
+      right: 30px;
+  
+      #new-products-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #BBBBBB;
+        width: 770px;
+        height: 575px;
+  
+        .new-products-title {
+          @include font-title-2;
+          color: $color-light-1;
+        }
+  
+        #btn-new-products {
+          position: absolute;
+          bottom: 40%;
+          padding: 10px 20px;
+          text-align: center;
+          line-height: 3;
+          font-size: 0.8em;
+          width: 160px;
+        }
+      } 
+        
+    }
+    .product-grid {
+        #new-products-grid {
+          display: grid;
+          grid-template-areas: 
+            "product0 product1 product2"
+            "product3 product4 product5";
+          column-gap: 30px;
+  
+          #product-0 {
+            grid-area: product0;
+          }
+          #product-1 {
+            grid-area: product1;
+          }
+          #product-2 {
+            grid-area: product2;
+          }
+          #product-3 {
+            grid-area: product3;
+          }
+          #product-4 {
+            grid-area: product4;
+          }
+          #product-5 {
+            grid-area: product5;
+          }
+  
+          .product-card {
+            display: flex;
+            flex-direction: column;
+  
+            .product-card-image-container {
+              img {
+                width: 210px;
+                height: 160px;
+              }
+            }
+            .product-card-category {
+              font-size: 13px;
+              font-weight: 500;
+              color: #616365;
+            }
+            .product-card-title {
+              font-size: 16px;
+              font-weight: 400;
+              color: #23262A;
+            }
+            .product-card-rating {
+              color: #ff7373;
+              font-size: 20px;
+              margin-top: 10px;
+            }
+            .product-card-null-rating {
+              color: #ff7373;
+              font-size: 20px;
+              margin-top: 14px;
+              margin-bottom: 1px;
+              display: flex;
+            }
+            .product-card-price {
+              font-size: 15px;
+              font-weight: 400;
+              margin-top: 10px;
+              margin-bottom: 15px;
+              color: #23262A;
+            }
+            .product-card-null-price{
+              font-size: 15px;
+              font-weight: 400;
+              margin-top: 15px;
+              margin-bottom: 15px;
+              color: #23262A;
+            }
+          }    
+        }     
+    }
+}  

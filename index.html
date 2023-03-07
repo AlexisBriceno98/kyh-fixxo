@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="sv-se">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://kit.fontawesome.com/41c8b474e2.css" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Fixxo.</title>
+</head>
+
+<body onload="getFeaturedProducts(), getNewProducts();">
+  <!-- header -->
+  <header>
+    <div class="container">
+      <a id="logotype" class="logotype" href="index.html">FIXXO.</a>
+
+      <div id="menu" class="collapse">
+        <nav id="menu-links" class="menu-links">
+          <a class="menu-link" href="index.html">Home</a>
+          <a class="menu-link" href="products.html">Products</a>
+          <a class="menu-link" href="contact.html">Contacts</a>
+        </nav>
+
+        <nav id="menu-icons" class="menu-icons">
+          <a class="menu-link" href="#"><i class="fa-regular fa-search"></i></a>
+          <a class="menu-link" href="#">
+            <i class="fa-regular fa-code-compare"></i>
+            <span class="menu-badge">12</span>
+          </a>
+          <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
+          <a class="menu-link" href="#">
+            <i class="fa-regular fa-bag-shopping"></i>
+            <span class="menu-badge">12</span>
+          </a>
+        </nav>
+      </div>
+
+
+      <div id="toggle-icon" class="menu-icons">
+        <button class="menu-link" data-bs-toggle="collapse" data-bs-target="#menu">
+          <i class="fa-regular fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- showcase -->
+  <section class="showcase">
+    <div class="container">
+      <div class="column-1">
+        <div class="content">
+          <div class="title-2">GET UP TO 40% OFF</div>
+          <div class="title-1">Don't Miss This Opportunity</div>
+          <div class="title-3">Online shopping free home delivery over $100</div>
+          <a class="btn-theme" href="#">SHOP NOW</a>
+        </div>
+      </div>
+      <div class="column-2">
+        <img src="images/showcase-img.png" alt="showcase image">
+      </div>
+    </div>
+  </section>
+
+  <!-- featured products -->
+  <section id="featured-products" class="featured-products">
+    <div class="container">
+      <div class="title">Featured Products</div>
+      <div class="product-grid">
+        <div id="product-container"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ADS -->
+  <section class="flash-sale">
+
+    <div id="office-style">
+      <div class="flash-sale-img">
+        <img src="images/static-images/office-style.png" alt="office style">
+      </div>
+    </div>
+
+    <div id="flash-sale-box" class="flash-sale-img">
+      <div class="box-bg">
+        <div class="box-border">
+          <div class="flash-content">
+            <div class="title-2">50% Offer</div>
+            <div class="title-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+              laudantium, totam rem apriam eaque ipsa quae ab illo inventore</div>
+            <a id="flash-btn" class="btn-white" href="#">FLASH SALE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="party-style">
+      <div class="flash-sale-img">
+        <img src="images/static-images/party-style.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- new products -->
+  <section class="new-products">
+    <div class="product-grid-box">
+      <div id="new-products-box">
+        <div class="new-products-title">2 FOR USD $29</div>
+        <a id="btn-new-products" class="btn-white" href="#">New Products</a>
+      </div>
+    </div>
+    <div class="product-grid">
+      <div id="new-products-grid">
+        <div id="product-4" class="product-card">
+          <div class="product-card-image-container">
+            <img src="https://kyhnet22sa.blob.core.windows.net/product-images/blue-set.png"
+              alt="Blue Jeans & Jacket photo" />
+          </div>
+          <h2 class="product-card-category">Sets</h2>
+          <h2 class="product-card-title">Blue Jeans & Jackets</h2>
+          <div class="product-card-null-rating">
+            <i class="fa-solid fa-sharp fa-star"></i>
+            <i class="fa-solid fa-sharp fa-star"></i>
+            <i class="fa-solid fa-sharp fa-star"></i>
+            <i class="fa-solid fa-sharp fa-star"></i>
+            <i class="fa-solid fa-sharp fa-star"></i>
+          </div>
+          <p class="product-card-null-price">2195 SEK</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <button id="button-scroll" onclick="topFunction()" class="totop-arrow"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="script/script.js"></script>
+</body>
+
+</html>
