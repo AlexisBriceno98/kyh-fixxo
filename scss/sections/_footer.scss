@@ -1,0 +1,103 @@
+.footer-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .line {
+        margin: 50px;
+        border: 1px solid $color-dark-3;
+        opacity: 0.40;
+        width: 60%;
+    }
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .footer-cards {
+        flex-basis: 20%;
+        margin-bottom: 30px;
+        text-align: center;
+        height: 50px;
+
+        .footer-flex-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-icons {
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+            border-radius: 50%;
+            box-shadow: 0 6px 0 $color-shadow-1;
+            width: 50px;
+        }
+
+
+
+
+        .footer-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .footer-information {
+            font-size: 14px;
+            line-height: 20px;
+            color: #777;
+        }
+    }
+}
+
+.footer-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .line-end {
+        margin-top: 120px;
+        border: 1px solid $color-dark-3;
+        opacity: 0.40;
+        width: 100%;
+    }
+}
+
+.social-media-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-light-4;
+
+    .social-media-box {
+        margin-top: 20px;
+        .social-media-flex-icons {
+            i {
+                color: $color-dark-2;
+            }
+
+            .social-media-icons{
+                margin: 10px;
+            }
+        }
+    }
+}
+
+.copy-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-light-4;
+
+    .copy-right-information{
+        font-size: 12px;
+        font-weight: $font-weight-regular;
+        line-height: 30px;
+        color: $color-dark-3;
+    }
+}

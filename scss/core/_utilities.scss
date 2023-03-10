@@ -1,6 +1,7 @@
 html, body {
     @include default-font;
     @include default-colors;
+    height: 1200px;
 }
 
 .totop-arrow {
@@ -8,8 +9,8 @@ html, body {
     position: fixed;
     right: 50px;
     bottom: 50px;
-    font-size: 1.5rem;
-    padding: 5px 16px;
+    font-size: 1rem;
+    padding: 4px 13px;
     border-radius: 50%;
     transition: background-color 0.25s, color 0.15s;
 

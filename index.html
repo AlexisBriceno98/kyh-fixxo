@@ -14,7 +14,7 @@
   <title>Fixxo.</title>
 </head>
 
-<body onload="getFeaturedProducts(), getNewProducts();">
+<body onload="getFeaturedProducts(), getNewProducts(), getPopularProducts();">
   <!-- header -->
   <header>
     <div class="container">
@@ -108,37 +108,192 @@
   </section>
 
   <!-- new products -->
-  <section class="new-products">
-    <div class="product-grid-box">
-      <div id="new-products-box">
-        <div class="new-products-title">2 FOR USD $29</div>
-        <a id="btn-new-products" class="btn-white" href="#">New Products</a>
-      </div>
-    </div>
-    <div class="product-grid">
-      <div id="new-products-grid">
-        <div id="product-4" class="product-card">
-          <div class="product-card-image-container">
-            <img src="https://kyhnet22sa.blob.core.windows.net/product-images/blue-set.png"
-              alt="Blue Jeans & Jacket photo" />
-          </div>
-          <h2 class="product-card-category">Sets</h2>
-          <h2 class="product-card-title">Blue Jeans & Jackets</h2>
-          <div class="product-card-null-rating">
-            <i class="fa-solid fa-sharp fa-star"></i>
-            <i class="fa-solid fa-sharp fa-star"></i>
-            <i class="fa-solid fa-sharp fa-star"></i>
-            <i class="fa-solid fa-sharp fa-star"></i>
-            <i class="fa-solid fa-sharp fa-star"></i>
-          </div>
-          <p class="product-card-null-price">2195 SEK</p>
+  <div class="products-grid-container">
+
+    <section class="new-products">
+      <div class="product-grid-box">
+        <div id="new-products-box">
+          <div class="new-products-title">2 FOR USD $29</div>
+          <a id="btn-new-products" class="btn-white" href="#">New Products</a>
         </div>
       </div>
+      <div class="product-grid">
+        <div id="new-products-grid">
+          <div id="product-4" class="product-card">
+            <div class="product-card-image-container">
+              <img src="https://kyhnet22sa.blob.core.windows.net/product-images/blue-set.png"
+                alt="Blue Jeans & Jacket photo" />
+            </div>
+            <h2 class="product-card-category">Sets</h2>
+            <h2 class="product-card-title">Blue Jeans & Jackets</h2>
+            <div class="product-card-null-rating">
+              <i class="fa-solid fa-sharp fa-star"></i>
+              <i class="fa-solid fa-sharp fa-star"></i>
+              <i class="fa-solid fa-sharp fa-star"></i>
+              <i class="fa-solid fa-sharp fa-star"></i>
+              <i class="fa-solid fa-sharp fa-star"></i>
+            </div>
+            <p class="product-card-null-price">2195 SEK</p>
+          </div>
+          <div id="product-5" class="product-card">
+            <div class="product-card-image-container">
+              <img src="https://kyhnet22sa.blob.core.windows.net/product-images/white-sweater.png"
+                alt="White Sweater photo" />
+            </div>
+            <h2 class="product-card-category">Sweaters</h2>
+            <h2 class="product-card-title">White Sweater</h2>
+            <div class="product-card-null-rating">
+              <i class="fa-solid fa-sharp fa-star"></i>
+              <i class="fa-solid fa-sharp fa-star"></i>
+              <i class="fa-solid fa-sharp fa-star"></i>
+              <i class="fa-solid fa-sharp fa-star"></i>
+              <i class="fa-solid fa-regular fa-star"></i>
+            </div>
+            <p class="product-card-null-price">385 SEK</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Products -->
+    <section class="popular-products">
+
+      <div class="product-grid">
+        <div id="popular-products-grid">
+          <div id="product-4" class="product-card">
+            <div class="product-card-image-container">
+              <img src="https://kyhnet22sa.blob.core.windows.net/product-images/blue-tshirt.png" alt="Blue T-Shirt" />
+            </div>
+            <h2 class="product-card-category">T-shirts</h2>
+            <h2 class="product-card-title">Blue T-shirt</h2>
+            <div class="product-card-null-rating">
+              <i class="fa-solid fa-sharp fa-star"></i>
+              <i class="fa-solid fa-sharp fa-star"></i>
+              <i class="fa-solid fa-regular fa-star"></i>
+              <i class="fa-solid fa-regular fa-star"></i>
+              <i class="fa-solid fa-regular fa-star"></i>
+            </div>
+            <p class="product-card-null-price">189 SEK</p>
+          </div>
+          <div id="product-5" class="product-card">
+            <div class="product-card-image-container">
+              <img src="https://kyhnet22sa.blob.core.windows.net/product-images/multicolor-tshirt.png"
+                alt="Colorful T-Shirt" />
+            </div>
+            <h2 class="product-card-category">T-shirts</h2>
+            <h2 class="product-card-title">Colorful T-shirt</h2>
+            <div class="product-card-null-rating">
+              <i class="fa-solid fa-sharp fa-star"></i>
+              <i class="fa-solid fa-sharp fa-star"></i>
+              <i class="fa-solid fa-sharp fa-star"></i>
+              <i class="fa-solid fa-sharp fa-star"></i>
+              <i class="fa-solid fa-regular fa-star"></i>
+            </div>
+            <p class="product-card-null-price">189 SEK</p>
+          </div>
+        </div>
+      </div>
+      <div class="popular-product-grid-box">
+        <div id="popular-products-box">
+          <div class="popular-products-title">2 FOR USD $29</div>
+          <a id="btn-popular-products" class="btn-white" href="#">Popular Products</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Footer -->
+  <section class="footer">
+    <div class="footer-start">
+      <div class="line"></div>
     </div>
+
+    <div class="footer-flex">
+
+      <div class="footer-cards">
+        <div class="footer-flex-icons">
+          <div class="footer-icons"><i class="fa-regular fa-messages-question"></i></div>
+        </div>
+        <div class="footer-title">Customer Support</div>
+        <div class="footer-information">24/7 support available. Call us for help anytime.</div>
+      </div>
+
+      <div class="footer-cards">
+        <div class="footer-flex-icons">
+          <div class="footer-icons"><i class="fa-solid fa-credit-card-front"></i></div>
+        </div>
+        <div class="footer-title">Secured Payment</div>
+        <div class="footer-information">Secure payments guaranteed. Your transactions are encrypted and processed
+          securely."</div>
+      </div>
+
+      <div class="footer-cards">
+        <div class="footer-flex-icons">
+          <div class="footer-icons"><i class="fa-regular fa-truck-bolt"></i></div>
+        </div>
+        <div class="footer-title">Free Home Delivery</div>
+        <div class="footer-information">Free home delivery on all orders. Shop from home, we'll deliver to your door."
+        </div>
+      </div>
+      <div class="footer-cards">
+        <div class="footer-flex-icons">
+          <div class="footer-icons"><i class="fa-regular fa-truck"></i></div>
+        </div>
+        <div class="footer-title">30 Day Reuters</div>
+        <div class="footer-information">30-day returns. Shop with confidence knowing you have a month to return or
+          exchange your purchase.</div>
+      </div>
+    </div>
+
   </section>
 
   <button id="button-scroll" onclick="topFunction()" class="totop-arrow"><i class="fa-solid fa-arrow-up"></i></button>
   <script src="script/script.js"></script>
+
+
+  <div class="footer-end">
+    <div class="line-end"></div>
+  </div>
+
+  <div class="social-media-flex">
+
+    <div class="social-media-box">
+      <div class="social-media-flex-icons">
+        <a href="#" class="social-media-icons"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+    </div>
+
+    <div class="social-media-box">
+      <div class="social-media-flex-icons">
+        <a href="#" class="social-media-icons"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="social-media-box">
+      <div class="social-media-flex-icons">
+        <a href="#" class="social-media-icons"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="social-media-box">
+      <div class="social-media-flex-icons">
+        <a href="#" class="social-media-icons"><i class="fa-brands fa-google"></i></a>
+      </div>
+    </div>
+
+    <div class="social-media-box">
+      <div class="social-media-flex-icons">
+        <a href="#" class="social-media-icons"><i class="fa-brands fa-linkedin"></i></a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="copy-right">
+    <div class="copy-right-information">© 2023 Fixxo. All Rights Reserved</div>
+  </div>
 </body>
 
 </html>
