@@ -1,19 +1,18 @@
 html, body {
     @include default-font;
     @include default-colors;
-    height: 1200px;
 }
 
 .totop-arrow {
     @include default-colors-with-border;
     position: fixed;
+    max-width: fit-content;
     right: 50px;
     bottom: 50px;
     font-size: 1rem;
     padding: 4px 13px;
     border-radius: 50%;
     transition: background-color 0.25s, color 0.15s;
-
     &:hover {
         @include dark-colors-with-border;
     }

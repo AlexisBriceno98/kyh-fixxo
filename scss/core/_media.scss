@@ -40,27 +40,27 @@ $minmaxwidth-xxxl: 1680px;
 
 
 @mixin bpmd {
-    @media (min-width: $breakpoint-md) {
+    @media (max-width: $breakpoint-md) {
         @content
     }
 }
 @mixin bplg {
-    @media (min-width: $breakpoint-lg) {
+    @media (max-width: $breakpoint-lg) {
         @content
     }
 }
 @mixin bpxl {
-    @media (min-width: $breakpoint-xl) {
+    @media (max-width: $breakpoint-xl) {
         @content
     }
 }
 @mixin bpxxl {
-    @media (min-width: $breakpoint-xxl) {
+    @media (max-width: $breakpoint-xxl) {
         @content
     }
 }
 @mixin bpxxxl {
-    @media (min-width: $breakpoint-xxxl) {
+    @media (max-width: $breakpoint-xxxl) {
         @content
     }
 }

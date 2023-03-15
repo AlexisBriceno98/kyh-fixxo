@@ -12,9 +12,10 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>Fixxo.</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 </head>
 
-<body onload="getFeaturedProducts(), getNewProducts(), getPopularProducts();">
+<body onload="getFeaturedProducts(), getNewProducts(), getPopularProducts();"> 
   <!-- header -->
   <header>
     <div class="container">
@@ -92,8 +93,10 @@
         <div class="box-border">
           <div class="flash-content">
             <div class="title-2">50% Offer</div>
-            <div class="title-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-              laudantium, totam rem apriam eaque ipsa quae ab illo inventore</div>
+            <div class="title-3">Enjoy a 50% discount on all party-style and office-style clothes!
+              Get ready to party with our stylish collection or 
+              upgrade your work wardrobe with our sleek and professional office-style clothes.
+            </div>
             <a id="flash-btn" class="btn-white" href="#">FLASH SALE</a>
           </div>
         </div>
@@ -110,7 +113,7 @@
   <!-- new products -->
   <div class="products-grid-container">
 
-    <section class="new-products">
+    <div class="new-products">
       <div class="product-grid-box">
         <div id="new-products-box">
           <div class="new-products-title">2 FOR USD $29</div>
@@ -153,10 +156,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- Popular Products -->
-    <section class="popular-products">
+    <div class="popular-products">
 
       <div class="product-grid">
         <div id="popular-products-grid">
@@ -199,7 +202,7 @@
           <a id="btn-popular-products" class="btn-white" href="#">Popular Products</a>
         </div>
       </div>
-    </section>
+    </div>
   </div>
 
 
@@ -248,10 +251,6 @@
 
   </section>
 
-  <button id="button-scroll" onclick="topFunction()" class="totop-arrow"><i class="fa-solid fa-arrow-up"></i></button>
-  <script src="script/script.js"></script>
-
-
   <div class="footer-end">
     <div class="line-end"></div>
   </div>
@@ -294,6 +293,10 @@
   <div class="copy-right">
     <div class="copy-right-information">© 2023 Fixxo. All Rights Reserved</div>
   </div>
+
+  <button id="button-scroll" onclick="topFunction()" class="totop-arrow"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="script/script.js"></script>
+  <script src="script/arrow.js"></script>
 </body>
 
 </html>

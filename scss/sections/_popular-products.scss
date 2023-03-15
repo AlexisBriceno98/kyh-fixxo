@@ -1,126 +1,167 @@
 .products-grid-container {
-  
-  max-width: 3000px;
-  height: 100%;
-
+  position: relative;
   .popular-products {
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    position: relative;
-  
+    align-items: center;
+
+    @include bpmd {
+      margin-top: 0;
+      display: block;
+    }
+
     .popular-product-grid-box {
-      position: absolute;
-      top: 570px;
-      left: 50%;
-      max-width: 100%;
-      height: 100px;
-  
+      margin-top: -3px;
+
       #popular-products-box {
-        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #BBBBBB;
-        width: 759px;
+        width: 735px;
         height: 557px;
-  
+        margin-left: 30px;
+
+        @include bpmd {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          height: 300px;
+          margin-left: 0;
+        }
+
+
         .popular-products-title {
+          position: relative;
           @include font-title-2;
           color: $color-light-1;
+          left: 100px;
+
+          @include bpmd {
+            left: 85px;
+          }
         }
-  
+
         #btn-popular-products {
-          position: absolute;
-          bottom: 35%;
+          bottom: -10%;
+          right: 10%;
           padding: 10px 20px;
           text-align: center;
           line-height: 3;
           font-size: 0.8em;
           width: 160px;
+
+          @include bpmd {
+            bottom: -15%;
+            right: 28%;
+          }
         }
       }
-  
+
     }
-  
+
     .product-grid {
-      position: absolute;
+
       #popular-products-grid {
-        position: relative;
-        top: 570px;
-        right: 57%;
         display: grid;
         grid-template-areas:
           "product0 product1 product2"
           "product3 product4 product5";
         gap: 30px;
-  
+        margin-left: 87px;
+        margin-top: 17px;
+
+        @include bpmd {
+          grid-template-areas:
+            "product0 product1"
+            "product2 product3"
+            "product4 product5";
+          gap: 10px;
+          padding: 10px;
+          margin-left: 0;
+          margin-top: 300px;
+        }
+
         #product-0 {
           grid-area: product0;
         }
-  
+
         #product-1 {
           grid-area: product1;
-  
+
           .product-card-title {
             font-size: 14.5px;
+            @include bpmd{
+              font-size: 14px;
+            }
           }
         }
-  
+
         #product-2 {
           grid-area: product2;
         }
-  
+
         #product-3 {
           grid-area: product3;
         }
-  
+
         #product-4 {
           grid-area: product4;
         }
-  
+
         #product-5 {
           grid-area: product5;
         }
-  
+
         .product-card {
           display: flex;
           flex-direction: column;
-  
           .product-card-image-container {
-  
+
             img {
               width: 200px;
               height: 145px;
               margin-bottom: 10px;
+
+              @include bpmd {
+                width: 192px;
+              }
             }
           }
-  
+
           .product-card-category {
             font-size: 13px;
             font-weight: 500;
             color: #616365;
           }
-  
+
           .product-card-title {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
             font-size: 16px;
             font-weight: 400;
             color: #23262A;
+
+            @include bpmd {
+              font-size: 15px;
+            }
           }
-  
+
           .product-card-rating {
             color: #ff7373;
             font-size: 15px;
           }
-  
+
           .product-card-null-rating {
             color: #ff7373;
             margin-top: 3.5px;
             font-size: 15px;
-  
+
             display: flex;
           }
-  
+
           .product-card-price {
             font-size: 15px;
             font-weight: 400;
@@ -128,7 +169,7 @@
             margin-bottom: 13px;
             color: #23262A;
           }
-  
+
           .product-card-null-price {
             font-size: 15px;
             font-weight: 400;
@@ -140,6 +181,4 @@
       }
     }
   }
-
 }
-

@@ -98,7 +98,19 @@ button {
     }
 }
 
+.btn-contact {
+    @include theme-colors;
+    padding: 20px 70px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    transition: background-color 0.25s;
+    position: relative;
 
-
+    &:hover {
+        @include dark-colors;
+        text-decoration: none;    
+    }
+}
 
 
