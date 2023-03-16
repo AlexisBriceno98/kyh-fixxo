@@ -18,6 +18,10 @@
 
        .error-holder{
         height: 15px;
+        @include bpmd{
+            height: 0;
+            margin: 10px;
+        }
         .error {
             font-size: 0.9em;
             padding: 5px;

@@ -1292,6 +1292,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 .social-media-flex .social-media-box .social-media-flex-icons i:hover {
   font-size: 20px;
 }
+
 .copy-right {
   position: relative;
   display: flex;
@@ -1329,6 +1330,12 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 }
 .contact-form form .error-holder {
   height: 15px;
+}
+@media (max-width: 768px) {
+  .contact-form form .error-holder {
+    height: 0;
+    margin: 10px;
+  }
 }
 .contact-form form .error-holder .error {
   font-size: 0.9em;
