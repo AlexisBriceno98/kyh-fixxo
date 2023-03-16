@@ -19,7 +19,6 @@
                 <div id="menu" class="collapse">
                     <nav id="menu-links" class="menu-links">
                         <a class="menu-link" href="index.html">Home</a>
-                        <a class="menu-link" href="products.html">Products</a>
                         <a class="menu-link" href="contact.html">Contacts</a>
                     </nav>
                     
@@ -64,86 +63,81 @@
 
         <!-- contact form -->
         <section class="contact-form">
-            <div class="container">
-              <h1>Come in Contact with Us</h1>
-              <form novalidate id="contact-forms">
-                <div class="contact-form-name">
-                  <input id="name" name="name" type="text" placeholder="Your Name">
-                  <div class="error-holder">
-                    <div class="error">
-                        Your name must be valid
-                    </div>
+          <div class="container">
+            <h1>Come in Contact with Us</h1>
+            <form novalidate onsubmit="handleSubmit(e)" id="contact-forms" method="post">
+              <div class="contact-form-name">
+                <input id="name" name="name" type="text" placeholder="Your Name">
+                <div class="error-holder">
+                  <div class="error">
+                      Your name must be valid
                   </div>
                 </div>
-                <div class="contact-form-email">
-                  <input id="email" name="email" type="email" placeholder="Your Mail">
-                  <div class="error-holder">
-                    <div class="error">
-                        Your email must be valid
-                    </div>
-                </div>
-                </div>
-                <div class="contact-form-comments">
-                  <textarea id="comments" name="comments" placeholder="Comments"></textarea>
-                  <div class="error-holder">
-                    <div class="error">
-                        Your comment must be valid
-                    </div>
-                </div>
-                </div>
-                <button class="btn-contact" type="submit">Post Comments</button>
-              </form>
-            </div>
-          </section>
-          
-          
-            <div class="footer-end">
-                <div class="line-end"></div>
               </div>
-            
-              <div class="social-media-flex">
-            
-                <div class="social-media-box">
-                  <div class="social-media-flex-icons">
-                    <a href="#" class="social-media-icons"><i class="fa-brands fa-facebook-f"></i></a>
+              <div class="contact-form-email">
+                <input id="email" name="email" type="email" placeholder="Your Mail">
+                <div class="error-holder">
+                  <div class="error">
+                      Your email must be valid
                   </div>
-                </div>
-            
-                <div class="social-media-box">
-                  <div class="social-media-flex-icons">
-                    <a href="#" class="social-media-icons"><i class="fa-brands fa-instagram"></i></a>
-                  </div>
-                </div>
-            
-                <div class="social-media-box">
-                  <div class="social-media-flex-icons">
-                    <a href="#" class="social-media-icons"><i class="fa-brands fa-twitter"></i></a>
-                  </div>
-                </div>
-            
-                <div class="social-media-box">
-                  <div class="social-media-flex-icons">
-                    <a href="#" class="social-media-icons"><i class="fa-brands fa-google"></i></a>
-                  </div>
-                </div>
-            
-                <div class="social-media-box">
-                  <div class="social-media-flex-icons">
-                    <a href="#" class="social-media-icons"><i class="fa-brands fa-linkedin"></i></a>
-            
-                  </div>
-                </div>
-            
               </div>
-            
-              <div class="copy-right">
-                <div class="copy-right-information">© 2023 Fixxo. All Rights Reserved</div>
               </div>
+              <div class="contact-form-comments">
+                <textarea id="comments" name="comments" placeholder="Comments"></textarea>
+                <div class="error-holder">
+                  <div class="error">
+                      Your comment must be valid
+                  </div>
+              </div>
+              </div>
+              <button type="submit" class="btn-contact">Post Comments</button>
+            </form>
+          </div>
         </section>
 
-
-        <button id="button-scroll" onclick="topFunction()" class="totop-arrow"><i class="fa-solid fa-arrow-up"></i></button>
+        <div class="footer-end">
+            <div class="line-end"></div>
+          </div>
+        
+          <div class="social-media-flex">
+        
+            <div class="social-media-box">
+              <div class="social-media-flex-icons">
+                <a href="#" class="social-media-icons"><i class="fa-brands fa-facebook-f"></i></a>
+              </div>
+            </div>
+        
+            <div class="social-media-box">
+              <div class="social-media-flex-icons">
+                <a href="#" class="social-media-icons"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+        
+            <div class="social-media-box">
+              <div class="social-media-flex-icons">
+                <a href="#" class="social-media-icons"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+            </div>
+        
+            <div class="social-media-box">
+              <div class="social-media-flex-icons">
+                <a href="#" class="social-media-icons"><i class="fa-brands fa-google"></i></a>
+              </div>
+            </div>
+        
+            <div class="social-media-box">
+              <div class="social-media-flex-icons">
+                <a href="#" class="social-media-icons"><i class="fa-brands fa-linkedin"></i></a>
+        
+              </div>
+            </div>
+        
+          </div>
+        
+          <div class="copy-right">
+            <div class="copy-right-information">© 2023 Fixxo. All Rights Reserved</div>
+          </div>
+          
     <script src="script/validation.js"></script>
-    <script src="script/arrow.js"></script>
 </body>
 </html>

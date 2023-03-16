@@ -1,4 +1,5 @@
 const mybutton = document.getElementById("button-scroll");
+const arrow = document.querySelector('.totop-arrow');
 
 window.onscroll = function() {
   scrollFunction();
@@ -7,15 +8,11 @@ window.onscroll = function() {
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
+    arrow.classList.add('show');
   } else {
     mybutton.style.display = "none";
+    arrow.classList.remove('show');
   }
-}
-
-if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-  mybutton.style.display = "block";
-} else {
-  mybutton.style.display = "none";
 }
 
 function topFunction() {
@@ -24,4 +21,3 @@ function topFunction() {
     behavior: 'smooth'
   });
 }
-

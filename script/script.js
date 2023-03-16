@@ -54,6 +54,14 @@ async function getNewProducts() {
       productEl.innerHTML = `
         <div class="product-card-image-container">
           <img src="${product.imageUrl}" alt="${product.name}"/>
+          <div class="product-card-menu">
+            <nav class="menu-icons">
+              <a class="menu-link" href="#"><i class="fa-regular fa-code-compare"></i></a>
+              <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
+              <a class="menu-link" href="#"><i class="fa-regular fa-bag-shopping"></i></a>                   
+            </nav>
+            <a href="#" id="btn-quick-view" class="btn-np">QUICK VIEW</a>
+          </div>
         </div>
         <h2 class="product-card-category">${product.category}</h2>
         <h2 class="product-card-title">${product.name}</h2>
@@ -84,15 +92,23 @@ async function getPopularProducts() {
       const emptyStar = '<i class="fa-solid fa-regular fa-star"></i>';
       const ratingProduct = filledStar.repeat(rating1) + emptyStar.repeat(5 - rating1);
       productEl.innerHTML = `
-        <div class="product-card-image-container">
-          <img src="${product.imageUrl}" alt="${product.name}"/>
-        </div>
-        <h2 class="product-card-category">${product.category}</h2>
-        <h2 class="product-card-title">${product.name}</h2>
-        <div class="product-card-rating">
-          ${ratingProduct}
-        </div>
-        <p class="product-card-price">${product.originalPrice} ${product.currency}</p>`;
+      <div class="product-card-image-container">
+      <img src="${product.imageUrl}" alt="${product.name}"/>
+      <div class="product-card-menu">
+        <nav class="menu-icons">
+          <a class="menu-link" href="#"><i class="fa-regular fa-code-compare"></i></a>
+          <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
+          <a class="menu-link" href="#"><i class="fa-regular fa-bag-shopping"></i></a>                   
+        </nav>
+        <a href="#" id="btn-quick-view" class="btn-np">QUICK VIEW</a>
+      </div>
+    </div>
+    <h2 class="product-card-category">${product.category}</h2>
+    <h2 class="product-card-title">${product.name}</h2>
+    <div class="product-card-rating">
+      ${ratingProduct}
+    </div>
+    <p class="product-card-price">${product.originalPrice} ${product.currency}</p>`;
       productsEl.appendChild(productEl);
     }
   } catch (error) {

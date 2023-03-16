@@ -3,14 +3,27 @@
     justify-content: center;
     align-items: center;
 
+    #party-style{
+        @include bpmd{
+            display: none;
+        }
+    }
+
+    #office-style{
+        @include bpmd{
+            display: none;
+        }
+    }
+
     .flash-sale-img {
         display: flex;
         justify-content: center;
         width: 400px;
         height: 317px;
         margin: 50px;
+        
         img{
-            
+            cursor: pointer;
         @include bpmd{
             display: none;
         }

@@ -12,11 +12,21 @@ html, body {
     font-size: 1rem;
     padding: 4px 13px;
     border-radius: 50%;
+    opacity: 0;
     transition: background-color 0.25s, color 0.15s;
     &:hover {
         @include dark-colors-with-border;
+        opacity: 1;
+        transition: background-color 0.25s, color 0.15s;
+    }
+    @include bpmd{
+        right: 20px
+    }
+    &.show {
+        opacity: 1;
     }
 }
+
 
 .menu-badge {
     @include theme-colors;

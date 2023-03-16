@@ -31,6 +31,7 @@ const validateComment = (value) => {
 const handleSubmit = async (e) => {
     e.preventDefault(); 
 
+
     validateName(nameInput.value.trim());
     validateEmail(emailInput.value.trim());
     validateComment(commentsInput.value.trim());
@@ -57,11 +58,12 @@ const handleSubmit = async (e) => {
             },
             body: JSON.stringify(contactForm)
         });
-        const data = await res.json();
-      
-        console.log(data);
-      } catch{
-        
+
+        if (res.ok) {
+            window.location.href = './submit.html';
+        }
+      } catch(error) {
+        console.error(error);
       }
       
 };

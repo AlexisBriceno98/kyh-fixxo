@@ -39,6 +39,51 @@ button {
     }
 }
 
+.btn-np {
+    @include theme-colors;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-block;
+    transition: background-color 0.25s;
+    position: relative;
+    &:hover {
+        @include dark-colors;
+        text-decoration: none;    
+    }
+    &::before {
+        content: "";
+        border-top: 1px solid $color-light-2;
+        border-left: 1px solid $color-light-2;
+        position: absolute;
+        top: 10px;
+        left: 12px;
+        height: 20px;
+        width: 20px;
+    }
+
+    &::after {
+        content: "";
+        border-bottom: 1px solid $color-light-2;
+        border-right: 1px solid $color-light-2;
+        position: absolute;
+        bottom: 10px;
+        right: 12px;
+        height: 20px;
+        width: 20px;
+    }
+
+    &:hover {
+        @include dark-colors;
+        text-decoration: none;    
+    }
+
+    @include bpmd{
+        padding: 10px;
+    }
+}
+
+
 
 .btn-white {
     @include default-colors;
@@ -100,12 +145,12 @@ button {
 
 .btn-contact {
     @include theme-colors;
-    padding: 20px 70px;
+    padding: 30px 30px;
     text-decoration: none;
+    text-align: center;
     font-size: 1rem;
     display: inline-block;
     transition: background-color 0.25s;
-    position: relative;
 
     &:hover {
         @include dark-colors;
