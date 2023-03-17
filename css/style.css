@@ -673,36 +673,44 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
     display: none;
   }
 }
+.flash-sale #flash-sale-box {
+  width: 25%;
+}
+@media (max-width: 768px) {
+  .flash-sale #flash-sale-box {
+    width: 100%;
+    height: 100%;
+  }
+}
 .flash-sale #flash-sale-box .box-bg {
   background-color: #f3f3f3;
+  width: 100%;
+  height: 317px;
+  padding: 10px;
 }
 @media (max-width: 768px) {
   .flash-sale #flash-sale-box .box-bg {
-    width: 100%;
+    height: 80%;
+    margin-bottom: 30px;
   }
 }
 .flash-sale #flash-sale-box .box-bg .box-border {
-  width: 460px;
-  height: 295px;
+  width: 100%;
+  height: 100%;
   border: 10px solid #ff7373;
-  margin: 10px;
+  padding: 10px;
   position: relative;
 }
 @media (max-width: 768px) {
   .flash-sale #flash-sale-box .box-bg .box-border {
-    width: 350px;
-    height: 295px;
-    margin: 10px;
     border: 8px solid #ff7373;
   }
 }
 .flash-sale #flash-sale-box .box-bg .box-border .flash-content {
-  margin-top: 20px;
-  display: block;
   text-align: center;
 }
 .flash-sale #flash-sale-box .box-bg .box-border .flash-content .title-2 {
-  margin-top: 50px;
+  margin-top: 40px;
   font-size: 2.188em;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
@@ -711,23 +719,26 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 }
 .flash-sale #flash-sale-box .box-bg .box-border .flash-content .title-3 {
   font-size: 12px;
-  margin-top: -20px;
+  margin-top: -10px;
+}
+@media (max-width: 768px) {
+  .flash-sale #flash-sale-box .box-bg .box-border .flash-content .title-3 {
+    font-size: 11px;
+  }
 }
 .flash-sale #flash-sale-box .box-bg .box-border .flash-content #flash-btn {
-  position: absolute;
-  bottom: 10%;
-  right: 31%;
-  padding: 10px 20px;
+  margin-top: 10px;
+  padding: 5px 20px;
   text-align: center;
   line-height: 3;
   font-size: 0.8em;
-  width: 160px;
+  width: 40%;
   border: 1px solid #222529;
 }
 @media (max-width: 768px) {
   .flash-sale #flash-sale-box .box-bg .box-border .flash-content #flash-btn {
-    right: 23%;
-    padding: 5px 15px;
+    width: 50%;
+    margin-top: 20px;
   }
 }
 
@@ -744,7 +755,6 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
 }
 @media (max-width: 768px) {
   .products-grid-container .new-products {
@@ -841,6 +851,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 .products-grid-container .new-products .product-grid #new-products-grid .product-card .product-card-image-container {
   display: flex;
   justify-content: center;
+  width: 100%;
   position: relative;
   max-height: 100%;
 }
@@ -917,9 +928,6 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   color: #616365;
 }
 .products-grid-container .new-products .product-grid #new-products-grid .product-card .product-card-title {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   font-size: 16px;
   font-weight: 400;
   color: #23262A;
@@ -967,7 +975,6 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
 }
 @media (max-width: 768px) {
   .products-grid-container .popular-products {
@@ -1035,7 +1042,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   grid-template-areas: "product0 product1 product2" "product3 product4 product5";
   gap: 30px;
   margin-left: 87px;
-  margin-top: 17px;
+  margin-top: 15px;
 }
 @media (max-width: 768px) {
   .products-grid-container .popular-products .product-grid #popular-products-grid {
@@ -1043,7 +1050,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
     gap: 10px;
     padding: 10px;
     margin-left: 0;
-    margin-top: 300px;
+    margin-top: 330px;
   }
 }
 .products-grid-container .popular-products .product-grid #popular-products-grid #product-0 {
@@ -1058,9 +1065,6 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 @media (max-width: 768px) {
   .products-grid-container .popular-products .product-grid #popular-products-grid #product-1 .product-card-title {
     font-size: 13.5px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
   }
 }
 .products-grid-container .popular-products .product-grid #popular-products-grid #product-2 {
@@ -1082,6 +1086,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 .products-grid-container .popular-products .product-grid #popular-products-grid .product-card .product-card-image-container {
   display: flex;
   justify-content: center;
+  width: 100%;
   position: relative;
   max-height: 100%;
 }
@@ -1157,42 +1162,44 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
   font-weight: 500;
   color: #616365;
 }
-.products-grid-container .popular-products .product-grid #popular-products-grid .product-card .product-card-title {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+@media (max-width: 768px) {
+  .products-grid-container .popular-products .product-grid #popular-products-grid .product-card .product-card-category {
+    width: 80%;
+  }
+}
+.products-grid-container .popular-products .product-grid #popular-products-grid .product-card-title {
   font-size: 16px;
   font-weight: 400;
   color: #23262A;
 }
 @media (max-width: 768px) {
-  .products-grid-container .popular-products .product-grid #popular-products-grid .product-card .product-card-title {
+  .products-grid-container .popular-products .product-grid #popular-products-grid .product-card-title {
     font-size: 13px;
   }
 }
-.products-grid-container .popular-products .product-grid #popular-products-grid .product-card .product-card-rating {
+.products-grid-container .popular-products .product-grid #popular-products-grid .product-card-rating {
   color: #ff7373;
   font-size: 15px;
 }
-.products-grid-container .popular-products .product-grid #popular-products-grid .product-card .product-card-null-rating {
+.products-grid-container .popular-products .product-grid #popular-products-grid .product-card-null-rating {
   color: #ff7373;
   margin-top: 3.5px;
   font-size: 15px;
   display: flex;
 }
 @media (max-width: 768px) {
-  .products-grid-container .popular-products .product-grid #popular-products-grid .product-card .product-card-null-rating {
+  .products-grid-container .popular-products .product-grid #popular-products-grid .product-card-null-rating {
     justify-content: center;
   }
 }
-.products-grid-container .popular-products .product-grid #popular-products-grid .product-card .product-card-price {
+.products-grid-container .popular-products .product-grid #popular-products-grid .product-card-price {
   font-size: 15px;
   font-weight: 400;
   margin-top: 9px;
   margin-bottom: 13px;
   color: #23262A;
 }
-.products-grid-container .popular-products .product-grid #popular-products-grid .product-card .product-card-null-price {
+.products-grid-container .popular-products .product-grid #popular-products-grid .product-card-null-price {
   font-size: 15px;
   font-weight: 400;
   margin-top: 14px;
@@ -1333,8 +1340,8 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 }
 @media (max-width: 768px) {
   .contact-form form .error-holder {
-    height: 0;
-    margin: 10px;
+    max-height: 5%;
+    margin-bottom: 20px;
   }
 }
 .contact-form form .error-holder .error {
@@ -1347,7 +1354,7 @@ header .menu-icons .menu-link:hover, header .menu-icons .menu-link.active {
 .contact-form form textarea {
   width: 100%;
   padding: 18px 20px;
-  border: 1px solid rgba(112, 112, 112, 0.4);
+  border: 1px solid #616365;
 }
 .contact-form form textarea {
   height: 140px;
